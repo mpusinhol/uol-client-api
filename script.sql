@@ -16,8 +16,8 @@ CREATE TABLE locations (
 CREATE TABLE temperatures (
 	id 				BIGSERIAL NOT NULL,
 	date			DATE NOT NULL,
-	maximum			DECIMAL NOT NULL,
-	minimum			DECIMAL NOT NULL,
+	maximum			INTEGER NOT NULL,
+	minimum			INTEGER NOT NULL,
 	location_id		SERIAL NOT NULL,
 	
 	CONSTRAINT pk_temperature PRIMARY KEY (id),
